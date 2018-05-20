@@ -12,9 +12,9 @@ int main(void)
 
 	printf("before dobavka:\n");
 	/*Инициализация и вывод неизменённого массива*/
-	for (int i = 1; i <= N ; ++i, ++pointer_mass)
+	for (int i = 0; i < N ; ++i)
 	{
-		*pointer_mass = i;
+		*(pointer_mass + i) = i + 1;
 		printf("%i ", *pointer_mass);
 	}
 	printf("\n");
